@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
         <title>Calculator</title>
         <link rel="stylesheet" href="styles.css">
         <script src="javascript.js" defer></script>
@@ -14,32 +15,42 @@
         </header>
 
         <div class="calculator">
+            <div class="output">
+                <div data-previous-operand></div>
+                <div data-current-operand></div>
+            </div>
+
             <div class="first_row">
-                <button id="seven">7</button>
-                <button id="eight">8</button>
-                <button id="nine">9</button>
-                <button id="divide">/</button>
+                <button data-all-clear>AC</button>
+                <button data-delete>DEL</button>
+                <button data-operation>/</button>
+            </div>
+
+            <div class="second_row">
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation>*</button>
             </div>
                 
-            <div class="second_row">
-                <button id="four">4</button>
-                <button id="five">5</button>
-                <button id="six">6</button>
-                <button id="multiply">x</button>
+            <div class="third_row">
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation>+</button>
             </div>
             
-            <div class="third_row">
-                <button id="one">1</button>
-                <button id="two">2</button>
-                <button id="three">3</button>
-                <button id="subtract">-</button>
+            <div class="fourth_row">
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation>-</button>
             </div>
         
-            <div class="fourth-row">
-                <button id="happy">:)</button>
-                <button id="zero">0</button>
-                <button id="add">+</button>
-                <button id="equal">=</button>
+            <div class="five-row">
+                <button data-number>.</button>
+                <button data-number>0</button>
+                <button data-equals>=</button>
             </div>
         </div>
 
