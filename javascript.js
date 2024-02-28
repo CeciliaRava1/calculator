@@ -21,9 +21,9 @@ function operate(firstNumber, secondNumber, operator){
 let firstNumber = parseFloat(prompt("Input the first number",0));
 let secondNumber = parseFloat(prompt("Input the second number",0));
 let operator = prompt("Input the operator. It can be '+', '-', '*' or '/'", "")
-*/
 let result = operate(firstNumber, secondNumber, operator);
 console.log(result);
+*/
 
 //DOM variables. To control this elements by Js
 const seven_div = document.getElementById('seven');
@@ -50,46 +50,55 @@ const equal_div = document.getElementById('equal');
 //MAIN
 function main() {
     seven_div.addEventListener('click', function() {
-        game('seven');
+        operate('seven');
     })
     eight_div.addEventListener('click', function() {
-        game('eight');
+        operate('eight');
     })
     nine_div.addEventListener('click', function() {
-        game('nine');
+        operate('nine');
+    })
+    divide_div.addEventListener('click', function() {
+        operate('divide');
     })
 
-
-//pendiente
-
-    rock_div.addEventListener('click', function() {
-        game('rock');
+    four_div.addEventListener('click', function() {
+        operate('four');
     })
-    paper_div.addEventListener('click', function() {
-        game('paper');
+    five_div.addEventListener('click', function() {
+        operate('five');
     })
-    scissors_div.addEventListener('click', function() {
-        game('scissors');
+    six_div.addEventListener('click', function() {
+        operate('six');
     })
-
-    rock_div.addEventListener('click', function() {
-        game('rock');
-    })
-    paper_div.addEventListener('click', function() {
-        game('paper');
-    })
-    scissors_div.addEventListener('click', function() {
-        game('scissors');
+    multiply_div.addEventListener('click', function() {
+        operate('multiply');
     })
 
-    rock_div.addEventListener('click', function() {
-        game('rock');
+    one_div.addEventListener('click', function() {
+        operate('one');
     })
-    paper_div.addEventListener('click', function() {
-        game('paper');
+    two_div.addEventListener('click', function() {
+        operate('two');
     })
-    scissors_div.addEventListener('click', function() {
-        game('scissors');
+    three_div.addEventListener('click', function() {
+        operate('three');
+    })
+    subtract_div.addEventListener('click', function() {
+        operate('subtract');
+    })
+
+    happy_div.addEventListener('click', function() {
+        operate('happy');
+    })
+    zero_div.addEventListener('click', function() {
+        operate('zero');
+    })
+    add_div.addEventListener('click', function() {
+        operate('add');
+    })
+    equal_div.addEventListener('click', function() {
+        operate('equal');
     })
 }
 main();
